@@ -78,9 +78,7 @@ puts Rainbow(" wind direction: #{weather.wind_direction}\n\n").aqua
 for day in weather_forecast
   puts "#{day.day_of_week}, #{day.date}"
   weather = day.daytime
-=begin
-  puts ""#{icon(weather.weather_icon)}"
-=end
+
   if weather.wind_direction != nil
     puts Rainbow(" high temperature: #{weather.high_temperature} c°").orange
     puts Rainbow(" low temperature: #{weather.low_temperature} c°").magenta
